@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Игра Морской бой</title>
+<link href="fonts/SegoePrint/fonts.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="battlefield">
+		<div id="text_top" class="text-top">Расстановка кораблей</div>
+		<div class="outer clearfix">
+			<div class="field field-user">
+				<div id="field_user" class="ships"></div>
+			</div>
+			<div class="field field-comp" data-hidden="true">
+				<div id="field_comp" class="ships"></div>
+			</div>
+			<div id="instruction" class="instruction" data-hidden="false">
+				<div id="type_placement" class="type-placement-box">
+					1. <span class="link" data-target="random">Случайным образом</span><br>
+					2. <span class="link" data-target="manually">Самостоятельно с чистого листа.</span>
+				</div>
+				<div id="ships_collection" class="ships-collection" data-hidden="true">
+					<p>Перетащите мышкой корабли на игровое поле. Для установки корабля по вертикали, кликните по нему правой кнопкой мышки.</p>
+					<ul id='initial_ships' class="initial-ships">
+						<li>
+							<div id="fourdeck1" class="ship fourdeck"></div>
+							<div id="tripledeck1" class="ship tripledeck tripledeck1"></div>
+							<div id="tripledeck2" class="ship tripledeck tripledeck2"></div>
+						</li>
+						<li>
+							<div id="doubledeck1" class="ship doubledeck"></div>
+							<div id="doubledeck2" class="ship doubledeck doubledeck2"></div>
+							<div id="doubledeck3" class="ship doubledeck doubledeck3"></div>
+						</li>
+						<li>
+							<div id="singledeck1" class="ship singledeck"></div>
+							<div id="singledeck2" class="ship singledeck singledeck2"></div>
+							<div id="singledeck3" class="ship singledeck singledeck3"></div>
+							<div id="singledeck4" class="ship singledeck singledeck4"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<span id="play" class="btn-play" data-hidden="true">Играть</span>
+		<div id="text_btm" class="text-btm"></div>
+		<span id="btn-repeat" class="btn-repeat" data-hidden="true"><a href="">Сыграть еще раз</a></span>
+	</div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
